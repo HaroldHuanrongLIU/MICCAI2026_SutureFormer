@@ -1,0 +1,14 @@
+_target_: sutureformer.datasets.trajectory_dataset.TrajectoryDataset
+
+data_root: /path/to/dataset/MICCAI2026_Surgical_Trajectory_Prediction_Dataset
+crop_size: 128
+image_size: [902, 1264]
+coord_range: [1263, 901]
+
+# Keyframe-based split
+obs_keyframe_end: 6
+min_keyframes: 7
+num_buckets: 10
+
+# Per-sample disk cache for processed crops (set to null to disable)
+cache_dir: /path/to/dataset/cache

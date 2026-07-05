@@ -1,0 +1,26 @@
+_target_: sutureformer.models.sutureformer.SutureFormer
+
+# Spatial CNN
+cnn_in_channels: 4
+cnn_feature_dim: 256
+
+# Coordinate Encoder
+coord_embed_dim: 64
+coord_num_frequencies: 16
+
+# Temporal Transformer
+transformer_d_model: 256
+transformer_nhead: 8
+transformer_layers: 4
+transformer_ff_dim: 512
+transformer_dropout: 0.1
+
+# State Encoder
+state_dim: 480  # 256 + 64 + 64 + 64 + 32 (ctx + pos + guid + rel + step)
+
+# Action Heads
+num_directions: 9
+delta_max: 0.05
+
+# Q-Networks (CQL)
+q_hidden_dim: 256

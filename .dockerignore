@@ -1,0 +1,8 @@
+logs/
+*.pt
+*.pth
+__pycache__/
+*.egg-info/
+.git/
+outputs/
+pretrained/

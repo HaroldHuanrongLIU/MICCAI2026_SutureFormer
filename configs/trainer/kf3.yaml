@@ -1,0 +1,54 @@
+# Trainer config for the kf3 setting (obs = 3 keyframes, predict the rest).
+
+# Epoch budget
+total_epochs: 200
+eval_interval: 1
+save_every: 5
+save_best: true
+
+# Batch
+batch_size: 8
+
+# Learning rates
+lr_encoder: 2.0e-4
+lr_actor: 1.0e-4
+lr_critic: 3.0e-4
+lr_magnitude: 5.0e-4
+
+# CQL (offline RL)
+gamma: 0.93
+tau: 0.005
+alpha: 0.3                  # higher entropy temperature for longer horizons
+gradient_clip: 1.0
+alpha_cql: 0.005
+lambda_bc: 0.5              # reduced BC weight
+n_step: 3
+max_grad_transitions: 2048
+
+# Reward
+r_time: -0.01
+d_thresh: 0.04              # relaxed proximity threshold for longer trajectories
+d_max: 0.1
+r_prox_max: 0.5
+r_prox_neg: -0.25
+r_terminal_max: 3.0         # stronger terminal reward for endpoint accuracy
+sigma_terminal: 0.02        # tighter terminal reward decay
+lambda_magnitude: 100.0
+
+# Guidance augmentation
+guidance_noise_std: 0.02
+guidance_noise_prob: 0.5
+
+# Observation augmentation
+obs_coord_jitter_std: 0.002
+obs_color_jitter_brightness: 0.1
+obs_temporal_dropout_prob: 0.1  # reduced: only 3 keyframes, can't afford to drop
+
+# Workers
+num_workers: 16
+
+# Logging
+use_wandb: false
+use_tensorboard: false
+wandb_project: "SutureFormer"
+wandb_entity: null

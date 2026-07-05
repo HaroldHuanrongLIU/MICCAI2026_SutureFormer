@@ -1,0 +1,52 @@
+# Epoch budget
+total_epochs: 100
+eval_interval: 1
+save_every: 5
+save_best: true
+
+# Batch
+batch_size: 8
+
+# Learning rates
+lr_encoder: 1.0e-4
+lr_actor: 3.0e-4
+lr_critic: 3.0e-4
+lr_magnitude: 3.0e-4
+
+# CQL (offline RL)
+gamma: 0.95
+tau: 0.005
+alpha: 0.2                  # fixed entropy temperature (no auto-tuning)
+gradient_clip: 1.0
+alpha_cql: 0.5              # CQL conservative penalty weight
+lambda_bc: 0.3              # behavior-cloning regularization weight
+n_step: 3
+max_grad_transitions: 2048
+
+# Reward
+r_time: -0.01
+d_thresh: 0.02
+d_max: 0.1
+r_prox_max: 0.5
+r_prox_neg: -0.25
+r_terminal_max: 1.0
+sigma_terminal: 0.03
+lambda_magnitude: 100.0
+
+# Guidance augmentation
+guidance_noise_std: 0.02
+guidance_noise_prob: 0.5
+
+# Observation augmentation
+obs_coord_jitter_std: 0.002
+obs_color_jitter_brightness: 0.1
+obs_temporal_dropout_prob: 0.2
+
+# Workers
+num_workers: 16
+
+# Logging
+use_wandb: false
+use_tensorboard: false
+wandb_project: "SutureFormer"
+wandb_entity: null
