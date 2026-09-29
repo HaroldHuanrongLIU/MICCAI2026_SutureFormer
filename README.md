@@ -1,10 +1,15 @@
 <div align="center">
 
+<a href="https://conferences.miccai.org/2026/">
+  <img src="assets/miccai2026-logo.png" alt="MICCAI 2026 logo" width="280">
+</a>
+
 # SutureFormer
 
 ### Learning Surgical Trajectories via Goal-conditioned Offline RL in Pixel Space
 
 [![MICCAI 2026](https://img.shields.io/badge/MICCAI-2026-blue)](https://conferences.miccai.org/2026/)
+[![MICCAI Paper](https://img.shields.io/badge/MICCAI-Paper-005B96)](https://papers.miccai.org/miccai-2026/1021-Paper2703.html)
 [![arXiv](https://img.shields.io/badge/arXiv-2603.26720-b31b1b.svg)](https://arxiv.org/abs/2603.26720)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776ab.svg)](https://www.python.org/)
