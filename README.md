@@ -175,10 +175,15 @@ If you find this work useful, please consider citing:
 
 ```bibtex
 @inproceedings{liu2026sutureformer,
-  title     = {{SutureFormer}: Learning Surgical Trajectories via Goal-conditioned Offline {RL} in Pixel Space},
+  title     = {{SutureFormer}: Learning Surgical Trajectories via Goal-Conditioned Offline {RL} in Pixel Space},
   author    = {Liu, Huanrong and Tian, Chunlin and Jia, Tongyu and Zhou, Tailai and Liu, Qin and Gao, Yu and Ban, Yutong and Gu, Yun and Rosman, Guy and Ma, Xin and Li, Qingbiao},
-  booktitle = {Medical Image Computing and Computer Assisted Intervention (MICCAI)},
-  year      = {2026}
+  booktitle = {Medical Image Computing and Computer Assisted Intervention -- MICCAI 2026},
+  year      = {2026},
+  publisher = {Springer Nature Switzerland},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {16893},
+  month     = sep,
+  url       = {https://papers.miccai.org/miccai-2026/1021-Paper2703.html}
 }
 ```
 
